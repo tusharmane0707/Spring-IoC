@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- bean definitions here -->
+    <bean id="myEmployee" class="com.jsp.employee.Employee">
+    <property name="id" value="1234"></property>
+    <property name="emp_name" value="Rohit"></property>
+    <property name="emp_email" value="rohit@mail.com"></property>
+    </bean> 
+    
+    <bean id="mystudent" class="com.jsp.student.constructor.injection.Student">
+    <constructor-arg index="0" value="123"></constructor-arg>
+     <constructor-arg index="1" value="Mayur"></constructor-arg>
+      <constructor-arg index="2" value="mayur@mail.com"></constructor-arg>
+    </bean>
+	
+
+</beans>
